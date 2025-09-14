@@ -1,23 +1,63 @@
 # 🎬 Sistema de Recomendação de Filmes
 
-Este projeto implementa um sistema de recomendação baseado em **filtragem colaborativa** usando o dataset [MovieLens 100k](https://grouplens.org/datasets/movielens/100k/).
+Este projeto implementa um **sistema de recomendação baseado em usuários** utilizando o dataset [MovieLens 100k](https://grouplens.org/datasets/movielens/100k/).  
+A aplicação foi desenvolvida em **Python** e disponibilizada em uma interface interativa com **Streamlit**.
 
 ---
 
-## 📚 Tecnologias Utilizadas
-
-- Python
-- Pandas, Numpy, Scikit-learn
-- Seaborn, Matplotlib (visualização)
-- Similaridade de Cosseno (Cosine Similarity)
+## 🚀 Funcionalidades
+- Exibir os **últimos filmes avaliados** por um usuário.
+- Recomendar novos filmes utilizando **similaridade de usuários** (Collaborative Filtering).
+- Exibir recomendações em **cards com título, nota prevista e pôster**.
+- Interface simples e intuitiva feita com **Streamlit**.
 
 ---
 
-🗂 Sobre o Dataset
+## 🛠️ Tecnologias Utilizadas
+- [Python 3](https://www.python.org/)
+- [Pandas](https://pandas.pydata.org/)
+- [NumPy](https://numpy.org/)
+- [scikit-learn](https://scikit-learn.org/)
+- [Streamlit](https://streamlit.io/)
 
-O dataset MovieLens 100k contém 100.000 avaliações de 943 usuários sobre 1682 filmes. Foi desenvolvido pela GroupLens Research na Universidade de Minnesota.
+---
 
-## 🚀 Como executar
+## 📂 Estrutura do Projeto
+├── ml-100k/
+│ ├── u.data # Avaliações dos usuários
+│ ├── u.item # Lista de filmes
+├── recomendador_filmes.py # Código principal
+└── README.md
+
+
+Criar e ativar um ambiente virtual (opcional, mas recomendado)
+
+python -m venv venv
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
+
+Instalar as dependências
+
+pip install -r requirements.txt
+
+
+(caso não tenha o requirements.txt, instale manualmente:)
+
+pip install pandas numpy scikit-learn streamlit
+
+
+Rodar a aplicação
+
+streamlit run recomendador_filmes.py
+
+
+Abra no navegador o endereço:
+
+http://localhost:8501
+
 
 1. Clone este repositório:
 
